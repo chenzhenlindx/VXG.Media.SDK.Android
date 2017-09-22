@@ -1,5 +1,7 @@
 package veg.mediaplayer.sdk.testmulti;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 
 import veg.mediaplayer.sdk.MediaPlayer;
@@ -49,6 +51,17 @@ class Player extends FrameLayout implements MediaPlayer.MediaPlayerCallback
 		this.context = context;
 
 		player = new MediaPlayer(context);
+		try {
+			Method RemoveLogoView=player.getClass().getMethod("RemoveLogoView");
+			RemoveLogoView.setAccessible(true);
+			RemoveLogoView.invoke(player); //通过实例化的对象，调用无参数的方法
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		}
 		playerStatusText = new TextView(context);
 		playerHwStatus = new TextView(context);
 		
