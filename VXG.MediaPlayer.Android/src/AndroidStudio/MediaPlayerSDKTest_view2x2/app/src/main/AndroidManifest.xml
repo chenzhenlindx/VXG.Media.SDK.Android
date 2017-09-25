@@ -8,6 +8,7 @@
         android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_short_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
         android:largeHeap="true" >
         <activity android:name="veg.mediaplayer.sdk.test.view2x2.MainActivity"
             	  android:noHistory="true"

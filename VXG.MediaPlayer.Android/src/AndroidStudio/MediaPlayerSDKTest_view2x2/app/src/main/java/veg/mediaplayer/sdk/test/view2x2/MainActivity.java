@@ -9,44 +9,37 @@ package veg.mediaplayer.sdk.test.view2x2;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
+import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
-import android.view.ViewGroup.LayoutParams;
-import android.webkit.WebSettings;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
-import android.widget.TextView;
-import android.view.inputmethod.InputMethodManager;
-import android.view.WindowManager;
-import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.graphics.PixelFormat;
-import android.view.*;
-import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView.OnEditorActionListener;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Toast;
+import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.TextView.OnEditorActionListener;
 
 import java.nio.ByteBuffer;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
-import android.preference.PreferenceManager;
-import veg.mediaplayer.sdk.MediaPlayer;
 import veg.mediaplayer.sdk.MediaPlayer.PlayerNotifyCodes;
 import veg.mediaplayer.sdk.MediaPlayerConfig;
 
@@ -504,13 +497,17 @@ public class MainActivity extends Activity implements OnClickListener, MediaPlay
     	    	
 
     	    	player1.backgroundColor(Color.RED);
+				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://43100dd7e48d45038c9bea7920591d83:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
     	    	player1.Open(conf, this);
     	    	player2.backgroundColor(Color.GREEN);
-    	    	player2.Open(conf, this);
+				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://91a47c70915e436fbf50b23f47629092:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+				player2.Open(conf, this);
     	    	player3.backgroundColor(Color.BLUE);
-    	    	player3.Open(conf, this);
+				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://69919b66dd3a4e18bd0681dc9742482d:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+				player3.Open(conf, this);
     	    	player4.backgroundColor(Color.YELLOW);
-    	    	player4.Open(conf, this);
+				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://8f5cf6b17e6d474989c0b8196ca8f146:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+				player4.Open(conf, this);
     			
 				btnConnect.setText("Disconnect");
 				playing = true;
@@ -536,6 +533,7 @@ public class MainActivity extends Activity implements OnClickListener, MediaPlay
 			player3.onPause();
 		if (player4 != null)
 			player4.onPause();
+		btnConnect.performClick();
 	}
 
 	@Override
@@ -551,6 +549,7 @@ public class MainActivity extends Activity implements OnClickListener, MediaPlay
 			player3.onResume();
 		if (player4 != null)
 			player4.onResume();
+		btnConnect.performClick();
   	}
 
   	@Override

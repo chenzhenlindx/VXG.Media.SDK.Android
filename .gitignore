@@ -82,3 +82,4 @@ VXG.MediaPlayer.Android/src/AndroidStudio/RTSP_Player/.gradle/
 VXG.MediaPlayer.Android/src/AndroidStudio/RTSP_Player/.idea/
 VXG.MediaPlayer.Android/src/AndroidStudio/RTSP_Player/app/build/
 VXG.MediaPlayer.Android/src/AndroidStudio/RTSP_Player/build/
+*.apk

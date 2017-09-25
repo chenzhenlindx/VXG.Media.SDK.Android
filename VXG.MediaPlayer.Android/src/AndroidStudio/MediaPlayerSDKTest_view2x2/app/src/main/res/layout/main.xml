@@ -17,21 +17,21 @@
             android:layout_weight="0.5"
 	        android:orientation="horizontal" >
 
-            <veg.mediaplayer.sdk.MediaPlayer
+            <veg.mediaplayer.sdk.test.view2x2.MediaPlayer
                 android:id="@+id/playerView1"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.5"
                 >
-            </veg.mediaplayer.sdk.MediaPlayer>
+            </veg.mediaplayer.sdk.test.view2x2.MediaPlayer>
 
-            <veg.mediaplayer.sdk.MediaPlayer
+            <veg.mediaplayer.sdk.test.view2x2.MediaPlayer
                 android:id="@+id/playerView2"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.5"
                 >
-            </veg.mediaplayer.sdk.MediaPlayer>
+            </veg.mediaplayer.sdk.test.view2x2.MediaPlayer>
 	        	        
         </LinearLayout>
     
@@ -42,21 +42,21 @@
             android:layout_weight="0.5"
 	        android:orientation="horizontal" >
 
-            <veg.mediaplayer.sdk.MediaPlayer
+            <veg.mediaplayer.sdk.test.view2x2.MediaPlayer
                 android:id="@+id/playerView3"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.5"
                 >
-            </veg.mediaplayer.sdk.MediaPlayer>
+            </veg.mediaplayer.sdk.test.view2x2.MediaPlayer>
 
-            <veg.mediaplayer.sdk.MediaPlayer
+            <veg.mediaplayer.sdk.test.view2x2.MediaPlayer
                 android:id="@+id/playerView4"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="0.5"
                 >
-            </veg.mediaplayer.sdk.MediaPlayer>
+            </veg.mediaplayer.sdk.test.view2x2.MediaPlayer>
 	        	        
         </LinearLayout>
 
@@ -64,6 +64,7 @@
 
     <LinearLayout
         android:id="@+id/playerControls"
+        android:visibility="gone"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
