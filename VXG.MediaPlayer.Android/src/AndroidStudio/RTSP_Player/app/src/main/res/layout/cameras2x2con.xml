@@ -14,7 +14,7 @@
         android:layout_weight="0.5"
         android:orientation="horizontal" >
 
-        <veg.mediaplayer.sdk.MediaPlayer
+        <com.hxct.MediaPlayer
             android:id="@+id/playerView1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -29,7 +29,7 @@
                 android:id="@+id/loaderIndicator1"
                 style="?android:attr/progressBarStyleSmall"/>
 
-        </veg.mediaplayer.sdk.MediaPlayer>
+        </com.hxct.MediaPlayer>
         <FrameLayout
             android:layout_width="2dp"
             android:layout_height="match_parent"
@@ -38,7 +38,7 @@
             android:id="@+id/verSeparator1"
 
             ></FrameLayout>
-        <veg.mediaplayer.sdk.MediaPlayer
+        <com.hxct.MediaPlayer
             android:id="@+id/playerView2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -59,7 +59,7 @@
                 android:background="#000000"
                 android:gravity="center"/>
 
-        </veg.mediaplayer.sdk.MediaPlayer>
+        </com.hxct.MediaPlayer>
 
     </LinearLayout>
     <FrameLayout
@@ -76,7 +76,7 @@
         android:layout_weight="0.5"
         android:orientation="horizontal" >
 
-        <veg.mediaplayer.sdk.MediaPlayer
+        <com.hxct.MediaPlayer
             android:id="@+id/playerView3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -97,7 +97,7 @@
                 android:background="#000000"
                 android:gravity="center"
                 />
-        </veg.mediaplayer.sdk.MediaPlayer>
+        </com.hxct.MediaPlayer>
         <FrameLayout
             android:layout_width="2dp"
             android:layout_height="match_parent"
@@ -105,7 +105,7 @@
             android:background="#006280"
             android:id="@+id/verSeparator2"
             ></FrameLayout>
-        <veg.mediaplayer.sdk.MediaPlayer
+        <com.hxct.MediaPlayer
             android:id="@+id/playerView4"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -125,7 +125,7 @@
                 android:visibility="invisible"
                 android:background="#000000"
                 android:gravity="center"/>
-        </veg.mediaplayer.sdk.MediaPlayer>
+        </com.hxct.MediaPlayer>
 
     </LinearLayout>
 
