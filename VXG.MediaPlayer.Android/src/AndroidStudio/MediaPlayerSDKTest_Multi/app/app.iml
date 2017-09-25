@@ -60,13 +60,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/armv7_armeabi_x86/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/armv7_armeabi_x86/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/armv7_armeabi_x86/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestArmv7_armeabi_x86/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestArmv7_armeabi_x86/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestArmv7_armeabi_x86/assets" type="java-test-resource" />
@@ -74,6 +67,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestArmv7_armeabi_x86/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestArmv7_armeabi_x86/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTestArmv7_armeabi_x86/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/testArmv7_armeabi_x86/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/debug/assets" type="java-resource" />

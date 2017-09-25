@@ -37,7 +37,7 @@ class Player extends FrameLayout implements MediaPlayer.MediaPlayerCallback
 	public ScaleGestureDetector detectors 		= null;	
 
 	private Context 			context = null;
-    private MediaPlayer			player = null;
+    private veg.mediaplayer.sdk.testmulti.MediaPlayer			player = null;
     private TextView 			playerStatusText = null;
     private TextView 			playerHwStatus = null;
 	
@@ -50,7 +50,7 @@ class Player extends FrameLayout implements MediaPlayer.MediaPlayerCallback
         super(context);
 		this.context = context;
 
-		player = new MediaPlayer(context);
+		player = new veg.mediaplayer.sdk.testmulti.MediaPlayer(context);
 		try {
 			Method RemoveLogoView=player.getClass().getMethod("RemoveLogoView");
 			RemoveLogoView.setAccessible(true);
@@ -75,7 +75,7 @@ class Player extends FrameLayout implements MediaPlayer.MediaPlayerCallback
         super(context, attr);
  		this.context = context;
 
-		player = new MediaPlayer(context);
+		player = new veg.mediaplayer.sdk.testmulti.MediaPlayer(context);
 		playerStatusText = new TextView(context);
 		playerHwStatus = new TextView(context);
 		
