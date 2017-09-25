@@ -64,16 +64,16 @@
 
     <LinearLayout
         android:id="@+id/playerControls"
-        android:visibility="gone"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <LinearLayout
             android:id="@+id/linearLayout1"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <AutoCompleteTextView
                 android:id="@+id/edit_ipaddress"
