@@ -91,7 +91,7 @@ public class MainActivity extends Activity implements OnClickListener
 		setTitle(R.string.app_name);
 		super.onCreate(savedInstanceState);
 
-		WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+		WifiManager wifi = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		multicastLock = wifi.createMulticastLock("multicastLock");
 		multicastLock.setReferenceCounted(true);
 		multicastLock.acquire();
@@ -226,8 +226,12 @@ public class MainActivity extends Activity implements OnClickListener
 		{
 	        for (int i=0; i < players.size(); i++) 
 	        {
-				players.get(i).Open(url);
+				 players.get(i).Open(url);
 	        }
+//			players.get(0).Open("rtsp://172.29.1.164:556/realplay://43100dd7e48d45038c9bea7920591d83:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+//			players.get(1).Open("rtsp://172.29.1.164:556/realplay://91a47c70915e436fbf50b23f47629092:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+//			players.get(2).Open("rtsp://172.29.1.164:556/realplay://69919b66dd3a4e18bd0681dc9742482d:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+//			players.get(3).Open("rtsp://172.29.1.164:556/realplay://8f5cf6b17e6d474989c0b8196ca8f146:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
 	        btnConnect.setText("Disconnect");
 	        playing = true;
 		}
@@ -264,6 +268,7 @@ public class MainActivity extends Activity implements OnClickListener
 		super.onResume();
         for (int i=0; i < players.size(); i++) 
         	players.get(i).getPlayer().onResume();
+		btnConnect.performClick();
   	}
 
   	@Override
