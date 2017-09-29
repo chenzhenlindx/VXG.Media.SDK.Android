@@ -68,7 +68,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"
-        android:visibility="visible">
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:visibility="visible"
+        android:visibility="gone">
 
         <LinearLayout
             android:id="@+id/linearLayout1"

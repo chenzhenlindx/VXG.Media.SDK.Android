@@ -494,21 +494,25 @@ public class MainActivity extends Activity implements OnClickListener, MediaPlay
     	    	MediaPlayerConfig conf = new MediaPlayerConfig();
     	    	conf.setDecodingType(1);
     	    	conf.setConnectionUrl(ConnectionUrl);
-    	    	
 
-    	    	player1.backgroundColor(Color.RED);
-				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://43100dd7e48d45038c9bea7920591d83:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
-    	    	player1.Open(conf, this);
-    	    	player2.backgroundColor(Color.GREEN);
-				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://91a47c70915e436fbf50b23f47629092:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+				boolean isInnerNet = true;
+				player1.backgroundColor(Color.RED);
+				if (isInnerNet)
+					conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://43100dd7e48d45038c9bea7920591d83:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+				player1.Open(conf, this);
+				player2.backgroundColor(Color.GREEN);
+				if (isInnerNet)
+					conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://91a47c70915e436fbf50b23f47629092:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
 				player2.Open(conf, this);
-    	    	player3.backgroundColor(Color.BLUE);
-				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://69919b66dd3a4e18bd0681dc9742482d:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+				player3.backgroundColor(Color.BLUE);
+				if (isInnerNet)
+					conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://69919b66dd3a4e18bd0681dc9742482d:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
 				player3.Open(conf, this);
-    	    	player4.backgroundColor(Color.YELLOW);
-				conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://8f5cf6b17e6d474989c0b8196ca8f146:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
+				player4.backgroundColor(Color.YELLOW);
+				if (isInnerNet)
+					conf.setConnectionUrl("rtsp://172.29.1.164:556/realplay://8f5cf6b17e6d474989c0b8196ca8f146:MAIN:TCP?cnid=1&pnid=0&token=&auth=30&redirect=0&transcode=0&resolution=2&bitrate=100&framerate=10&videotype=2&systemformat=2");
 				player4.Open(conf, this);
-    			
+
 				btnConnect.setText("Disconnect");
 				playing = true;
 			}
