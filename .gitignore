@@ -85,3 +85,5 @@ VXG.MediaPlayer.Android/src/AndroidStudio/RTSP_Player/build/
 *.apk
 VXG.MediaPlayer.Android/src/AndroidStudio/MediaPlayerSDKTest.LatencyControl/mediaPlayerSDKTestLatencyControl/build/
 VXG.MediaPlayer.Android/src/AndroidStudio/MediaPlayerSDKTest_DynamicSurface/mediaPlayerSDKTestDynamicSurface/build/
+VXG.MediaPlayer.Android/src/AndroidStudio/MediaPlayerSDKTest_Simple/mediaPlayerSDKTest_Simple/build/
+VXG.MediaPlayer.Android/src/AndroidStudio/MediaPlayerSDKTest_SlidingViews/mediaPlayerSDKTest_SlidingViews/build/
